@@ -1,0 +1,13 @@
+.footer {
+  background: $green;
+  padding: $space / 2 0;
+
+  .footer-content {
+    padding: $space / 2 0;
+  }
+
+  .copyright {
+    color: $white;
+    text-align: center;
+  }
+}
