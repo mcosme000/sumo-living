@@ -1,0 +1,19 @@
+.about {
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.about-content {
+  margin-bottom: 4rem;
+  text-align: center;
+  font-size: 1.8px;
+  img {
+    height: 10rem;
+  }
+  h3 {
+    text-transform: uppercase;
+  }
+}
