@@ -1,0 +1,43 @@
+.property-container {
+  @include tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+  }
+}
+
+.property {
+  background: $palewhite;
+  align-items: center;
+
+  .property-content {
+    padding: 2rem;
+    text-align: center;
+  }
+  .description {
+    font-size: 1.6rem;
+  }
+  .area {
+    font-size: 1.5rem;
+    color: $darkgrey;
+  }
+}
+
+.property-icons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  img {
+    width: 2rem;
+  }
+  li {
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

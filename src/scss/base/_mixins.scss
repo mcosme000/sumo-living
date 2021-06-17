@@ -21,3 +21,15 @@
   gap: $space;
   grid-template-columns: repeat($columnas, 1fr);
 }
+
+@mixin button($background, $display) {
+  background: $background;
+  margin-top: 2rem;
+  color: $white;
+  text-align: center;
+  padding: 0.5rem 3rem;
+  display: $display;
+  &:hover {
+    background: darken($background, 5);
+  }
+}

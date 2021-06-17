@@ -1,7 +1,17 @@
-.seccion {
+.section {
   margin-top: $space / 2;
   margin-bottom: $space / 2;
 }
 .contenido-centrado {
   max-width: 800px;
+}
+
+.align-rigth {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.align-left {
+  display: flex;
+  justify-content: flex-start;
 }
