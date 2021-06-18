@@ -1,7 +1,10 @@
-.green-btn {
+.green-btn-block {
   @include button($green, block);
 }
 
+.green-btn-inline {
+  @include button($green, inline-block);
+}
 .black-btn {
   @include button($black, inline-block);
 }

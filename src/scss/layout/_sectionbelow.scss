@@ -1,0 +1,52 @@
+.section-below {
+  @include desktop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .blog {
+      grid-column: 1/3;
+    }
+  }
+}
+
+.blog,
+.reviews {
+  margin: 2rem;
+}
+
+.blog-entry {
+  margin-bottom: 2rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+}
+
+.entry-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  h4 {
+    margin-top: 2rem;
+    @include tablet {
+      margin-top: 0;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 15rem;
+      height: 0.2rem;
+      background: $green;
+    }
+  }
+  .date {
+    font-size: 1.5rem;
+    span {
+      color: darken($green, 8);
+    }
+  }
+}

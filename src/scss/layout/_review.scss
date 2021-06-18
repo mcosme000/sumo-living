@@ -1,0 +1,29 @@
+.review-content {
+  background: $green;
+  padding: 2rem;
+  border-radius: 10px;
+
+  blockquote {
+    color: $white;
+    padding-left: 5rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("/build/img/comilla.svg");
+      background-repeat: no-repeat;
+      width: 5rem;
+      height: 5rem;
+      display: block;
+      position: absolute;
+      left: 0;
+      //cuando creamos elementos con ::after / ::before
+      //tenemos que aplicar relative / absolute
+      //para posicionarlo donde queremos.
+    }
+  }
+
+  p {
+    font-size: 1.3rem;
+  }
+}
