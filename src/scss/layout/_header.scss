@@ -31,4 +31,8 @@
   color: $white;
   text-align: left;
   font-weight: $regular;
+  font-size: 3rem;
+  @include tablet {
+    font-size: 4rem;
+  }
 }

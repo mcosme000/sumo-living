@@ -13,6 +13,10 @@
 }
 
 .nav-content {
+  display: none;
+  &.show {
+    display: block;
+  }
   @include tablet {
     display: flex;
     align-items: center;
@@ -36,5 +40,15 @@
         margin-right: 0;
       }
     }
+  }
+}
+
+// HAMBURGER MENU
+.mobile-menu {
+  @include tablet {
+    display: none;
+  }
+  img {
+    width: 4rem;
   }
 }
