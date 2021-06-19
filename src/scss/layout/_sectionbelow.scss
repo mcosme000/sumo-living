@@ -45,8 +45,11 @@
   }
   .date {
     font-size: 1.5rem;
-    span {
-      color: darken($green, 8);
-    }
+  }
+}
+
+.posted {
+  span {
+    color: darken($green, 8);
   }
 }

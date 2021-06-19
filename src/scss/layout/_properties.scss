@@ -29,7 +29,7 @@
 }
 
 .property-icons {
-  margin-top: 2rem;
+  margin: 1rem 0;
   display: flex;
   justify-content: space-around;
   img {
@@ -40,4 +40,8 @@
     display: flex;
     justify-content: space-between;
   }
+}
+
+.price {
+  color: darken($green, 5);
 }
