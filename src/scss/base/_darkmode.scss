@@ -1,0 +1,51 @@
+.dark-mode {
+  //INDEX PAGE
+  background: darken($darkgrey, 10);
+  p {
+    color: $white;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $white;
+  }
+
+  .property {
+    background: darken($green, 5);
+    .area {
+      color: $white;
+    }
+  }
+
+  .price {
+    color: $black;
+  }
+
+  .icons {
+    filter: invert(97%) sepia(88%) saturate(2356%) hue-rotate(184deg)
+      brightness(135%) contrast(100%);
+  }
+
+  //ABOUT US PAGE
+  blockquote {
+    color: $white;
+  }
+
+  //NEWS PAGE
+  .price-green {
+    color: $green;
+  }
+
+  table {
+    color: $white;
+  }
+  //FORM PAGE
+  fieldset {
+    color: $white;
+
+    input[type="submit"] {
+      color: $black;
+    }
+  }
+}

@@ -17,3 +17,8 @@
     text-transform: uppercase;
   }
 }
+
+.filter-green {
+  filter: invert(51%) sepia(38%) saturate(3650%) hue-rotate(112deg)
+    brightness(94%) contrast(102%);
+}

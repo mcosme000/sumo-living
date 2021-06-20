@@ -8,3 +8,7 @@
 .black-btn {
   @include button($black, inline-block);
 }
+
+.dark-button {
+  @include button(darken($green, 10), block);
+}

@@ -1,21 +1,44 @@
+//DARK MODE ICON STYLES
+.dark {
+  display: flex;
+  justify-content: flex-end;
+  .dark-mode-btn {
+    width: 3rem;
+    filter: invert(100%);
+    &:hover {
+      cursor: pointer;
+    }
+    @include tablet {
+      margin-top: 0;
+    }
+  }
+}
+
 .nav {
   display: flex;
   flex-direction: column;
   @include tablet {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
+
   .logo {
     color: $white;
     font-size: 40px;
     font-weight: $bold;
+    margin: 0;
   }
 }
 
 .nav-content {
   display: none;
   &.show {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+    }
   }
   @include tablet {
     display: flex;
@@ -33,6 +56,9 @@
     font-size: 2rem;
     display: block;
     text-align: left;
+    &:hover {
+      color: $black;
+    }
     @include tablet {
       margin-right: 2rem;
       font-size: 1.8rem;

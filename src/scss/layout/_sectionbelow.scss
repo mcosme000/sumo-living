@@ -14,7 +14,7 @@
 }
 
 .blog-entry {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -30,7 +30,6 @@
   flex-direction: column;
   justify-content: space-around;
   h4 {
-    margin-top: 2rem;
     @include tablet {
       margin-top: 0;
     }
