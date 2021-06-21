@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="build/css/app.css" />
-    <title>Sumo Living: About</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="dark container">
-        <img
-          class="dark-mode-btn"
-          src="build/img/dark-mode.svg"
-          alt="dark mode icon"
-        />
-      </div>
-      <div class="container header-content">
-        <div class="nav">
-          <a href="index.html">
-            <p class="logo">SUMO LIVING</p>
-          </a>
-          <div class="mobile-menu">
-            <img src="build/img/barras.svg" alt="responsive menu icon" />
-          </div>
-          <nav class="nav-content">
-            <a href="about.html">About us</a>
-            <a href="news.html">News</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-          </nav>
-        </div>
-      </div>
-    </header>
+<?php include "includes/templates/header.php"; ?>
 
     <!-- MAIN CONTAINER -->
     <main class="container section">
@@ -121,17 +87,6 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="container footer-content">
-        <nav class="footer-nav-content">
-          <a href="about.html">About us</a>
-          <a href="news.html">News</a>
-          <a href="blog.html">Blog</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
-      <p class="copyright">All rights reserved 2021 &copy;</p>
-    </footer>
-    <script src="build/js/bundle.min.js"></script>
-  </body>
-</html>
+<?php 
+include "includes/templates/footer.php"; 
+?>

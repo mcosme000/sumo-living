@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="build/css/app.css" />
-    <title>Sumo Living: News</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="dark container">
-        <img
-          class="dark-mode-btn"
-          src="build/img/dark-mode.svg"
-          alt="dark mode icon"
-        />
-      </div>
-      <div class="container header-content">
-        <div class="nav">
-          <a href="index.html">
-            <p class="logo">SUMO LIVING</p>
-          </a>
-          <div class="mobile-menu">
-            <img src="build/img/barras.svg" alt="responsive menu icon" />
-          </div>
-          <nav class="nav-content">
-            <a href="about.html">About us</a>
-            <a href="news.html">News</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-          </nav>
-        </div>
-      </div>
-    </header>
+<?php include "includes/templates/header.php"; ?>
 
     <main class="container section">
       <h1>Some of our properties</h1>
@@ -75,7 +41,7 @@
               </li>
             </ul>
             <p class="price">JPY245,000,000</p>
-            <a href="onsale.html" class="button green-btn-block"
+            <a href="onsale.php" class="button green-btn-block"
               >More details</a
             >
           </div>
@@ -119,7 +85,7 @@
               </li>
             </ul>
             <p class="price">JPY82,000,000</p>
-            <a href="onsale.html" class="button green-btn-block"
+            <a href="onsale.php" class="button green-btn-block"
               >More details</a
             >
           </div>
@@ -163,7 +129,7 @@
               </li>
             </ul>
             <p class="price">JPY480,000,000</p>
-            <a href="onsale.html" class="button green-btn-block"
+            <a href="onsale.php" class="button green-btn-block"
               >More details</a
             >
           </div>
@@ -207,7 +173,7 @@
               </li>
             </ul>
             <p class="price">JPY76,800,000</p>
-            <a href="onsale.html" class="button green-btn-block"
+            <a href="onsale.php" class="button green-btn-block"
               >More details</a
             >
           </div>
@@ -251,7 +217,7 @@
               </li>
             </ul>
             <p class="price">JPY243,000,000</p>
-            <a href="onsale.html" class="button green-btn-block"
+            <a href="onsale.php" class="button green-btn-block"
               >More details</a
             >
           </div>
@@ -295,7 +261,7 @@
               </li>
             </ul>
             <p class="price">JPY250,000,000</p>
-            <a href="onsale.html" class="button green-btn-block"
+            <a href="onsale.php" class="button green-btn-block"
               >More details</a
             >
           </div>
@@ -303,17 +269,6 @@
       </div>
     </main>
 
-    <footer class="footer">
-      <div class="container footer-content">
-        <nav class="footer-nav-content">
-          <a href="about.html">About us</a>
-          <a href="news.html">News</a>
-          <a href="blog.html">Blog</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
-      <p class="copyright">All rights reserved 2021 &copy;</p>
-    </footer>
-    <script src="build/js/bundle.min.js"></script>
-  </body>
-</html>
+<?php 
+include "includes/templates/footer.php"; 
+?>

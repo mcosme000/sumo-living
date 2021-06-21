@@ -1,44 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="build/css/app.css" />
-    <script
-      src="https://kit.fontawesome.com/8013b0f68f.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Sumo Living</title>
-  </head>
-  <body>
-    <header class="header home">
-      <div class="dark container">
-        <img
-          class="dark-mode-btn"
-          src="build/img/dark-mode.svg"
-          alt="dark mode icon"
-        />
-      </div>
-      <div class="container header-content">
-        <div class="nav">
-          <a class="home-a" href="/">
-            <p class="logo">SUMO LIVING</p>
-          </a>
-          <div class="mobile-menu">
-            <img src="build/img/barras.svg" alt="responsive menu icon" />
-          </div>
-
-          <nav class="nav-content home-nav">
-            <a href="about.html">About us</a>
-            <a href="news.html">News</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-          </nav>
-        </div>
-        <h1 class="header-title">Find your perfect new home</h1>
-      </div>
-    </header>
+<?php 
+$home = true; 
+$headerTitle = "Find the home of your dreams"; 
+include "includes/templates/header.php"; 
+?>
+<!-- 
+  En index añado la variable home, que va a ser true. 
+  Solo es true en index. 
+  Esto me sirve para diferenciar esta página de index del resto de páginas
+  y poder añadir estilos especiales. 
+-->
 
     <!-- ABOUT US -->
     <main class="container section">
@@ -309,18 +279,6 @@
       </section>
     </div>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="container footer-content">
-        <nav class="footer-nav-content">
-          <a href="about.html">About us</a>
-          <a href="news.html">News</a>
-          <a href="blog.html">Blog</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
-      <p class="copyright">All rights reserved 2021 &copy;</p>
-    </footer>
-    <script src="build/js/bundle.min.js"></script>
-  </body>
-</html>
+<?php 
+include "includes/templates/footer.php"; 
+?>
